@@ -1,0 +1,14 @@
+.image {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 2rem auto;
+}
+.contact {
+  width: 100vw;
+  height: 60rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: relative;
+}

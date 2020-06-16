@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="info.css"/>
+
+  </head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      />
+    </head>
+  </head>
+
+  <body>
+    <header class="heade" onmousemove="moveImage(event)">
+      <div class="introduce">
+        <p class="int-title">portfolio</p>
+        <p class="int-content">fullStack Devloper yoon hyeon-seob</p>
+      </div>
+      <div class="menu">
+        <ul class="menu-bar">
+    <li class="menu1"><a href="./portFolio.html">portfolio</a></li>
+    <li class="menu2"><a href="./index.html">Home</a></li>
+    <li class="menu3"><a href="./info_me.html">contact</a></li>
+    <li class="menu4"><a href="./about.me.html">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="contact">
+      <img src="./Layer11.png" alt="" class="Layer_11" />
+      <div class="title">contact</div>
+      <img src="./map.png" alt="지도" class="image" />
+      <div class="content">fullstack dEveloper hyeonSeob yoon</div>
+      <div class="contact-content">
+        안녕하세요 000입니다. <br />궁금한 사항을 메일로 문의해 주시면 <br />
+        빠른 시일내에 답변드리도록 하겠습니다. <br />감사합니다.
+      </div>
+      <ul>
+        <li>
+          <div class="menu-icon">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fab fa-twitter-square"></i></div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fab fa-instagram"></i></div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fas fa-envelope"></i></div>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p class="footer-1">E-mail hyeon3051@gmail.com</p>
+      <p class="footer-2">
+        copyright ＠ 2020 by YOON HYEONSEOB. All rights Reserved
+      </p>
+    </footer>
+    <script>
+      function moveImage(event) {
+        const heade = document.querySelector(".heade");
+        var cx = event.clientX / 10 - 100;
+        var y = -event.clientY / 2;
+        console.log(cx, y);
+        heade.style.backgroundPosition = `${cx}px ${y}px`;
+      }
+    </script>
+  </body>
+</html>

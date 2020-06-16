@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      />
+    </head>
+  </head>
+
+  <body style="background-color: #c0e8f6;">
+    <header class="heade" onmousemove="moveImage(event)">
+      <div class="introduce">
+        <p class="int-title">portfolio</p>
+        <p class="int-content">fullStack Devloper yoon hyeon-seob</p>
+      </div>
+      <div class="menu">
+        <ul class="menu-bar">
+          <li class="menu1"><a href="./portFolio.html">portfolio</a></li>
+          <li class="menu2"><a href="./index.html">Home</a></li>
+          <li class="menu3"><a href="./info_me.html">contact</a></li>
+          <li class="menu4"><a href="./about.me.html">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="user">
+        <p class="user-title">portfolio</p>
+        <p class="user-content">developer hyeonSeob yoon</p>
+      </div>
+      <ul class="image-box">
+        <li class="sub-image1">
+          <img src="./Layer 2.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image2">
+          <img src="./Layer 3.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image3">
+          <img src="./Layer 4.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image4">
+          <img src="./Layer 5.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image5">
+          <img src="./Layer 6.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image6">
+          <img src="./Layer 7.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image7">
+          <img src="./Layer 8.png" alt="" class="sub" />
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p class="footer-1">E-mail hyeon3051@gmail.com</p>
+      <p class="footer-2">
+        copyright ＠ 2020 by YOON HYEONSEOB. All rights Reserved
+      </p>
+    </footer>
+    <script>
+      function moveImage(event) {
+        const heade = document.querySelector(".heade");
+        var cx = event.clientX / 10 - 100;
+        var y = -event.clientY / 2;
+        console.log(cx, y);
+        heade.style.backgroundPosition = `${cx}px ${y}px`;
+      }
+    </script>
+  </body>
+</html>

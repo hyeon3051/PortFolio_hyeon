@@ -10,7 +10,7 @@ header {
   background-color: gray;
   background-blend-mode: normal;
   background-size: 100%;
-  background-repeat: no-repeat;
+  /*! background-repeat: no-repeat; */
   position: relative;
 }
 .introduce {
@@ -48,7 +48,7 @@ header .menu {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
-  align-content: center;
+  align-content: space-around;
   flex-wrap: wrap;
   transform: translate(0%, 50%);
 }
@@ -91,9 +91,9 @@ header .menu {
   margin-top: 5rem;
 }
 .content-box .box {
-  width: 7rem;
-  height: 7rem;
-  background-color: #e3c9b8;
+  width: 10rem;
+  height: 10rem;
+  background-color: aquamarine;
   border-radius: 20%;
   display: flex;
   justify-content: center;
@@ -104,7 +104,7 @@ header .menu {
 
 .box .alphabet {
   text-transform: uppercase;
-  color: white;
+  color: beige;
   font-size: 6rem;
   transform: translate(5%, 5%);
 }
@@ -114,13 +114,16 @@ header .menu {
 .content-info .content-title {
   font-size: 2.5rem;
   text-transform: uppercase;
-  margin-left: 1rem;
+  /*! margin-left: 1rem; */
+  text-align: left;
 }
 .content-info .content-content {
   font-size: 1.2rem;
-  margin-top: 1rem;
-  width: 100%;
+  /*! margin-top: 1rem; */
+  max-width: 100rem;
   font-family: NanumSquareRound;
+  text-align: left;
+  /*! left: ; */
 }
 main {
   width: 100vw;
@@ -138,10 +141,10 @@ main .user {
 .user .user-title {
   margin-top: 10rem;
   color: #89d9e7;
-  transform: translate(0%, 100%);
+  transform: translate(0%, 30%);
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 5rem;
   word-break: break-all;
   left: 0;
   right: 0;
@@ -150,7 +153,7 @@ main .user {
 }
 .user .user-content {
   margin-top: 6rem;
-  transform: translate(0%, 50%);
+  transform: translate(0%, 0%);
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -167,7 +170,7 @@ main .image-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   align-content: space-between;
 }
 .image-box li[class^="sub"] {
@@ -198,11 +201,11 @@ main .image-box {
 .image-box .sub {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  /*! opacity: 0.8; */
 }
 .contact {
   width: 100vw;
-  height: 1000px;
+  height: 600px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -214,9 +217,9 @@ main .image-box {
   right: 0;
   margin: 0 auto;
   color: #89d9e7;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 4rem;
   text-transform: uppercase;
 }
 .contact .content {
@@ -226,34 +229,34 @@ main .image-box {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
 }
 .contact .contact-content {
-  width: 80%;
+  /*! width: 80%; */
   font-family: NanumSquareRound;
   left: 0;
   right: 0;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 4rem;
+  /*! margin-top: 4rem; */
 }
 
 .contact ul {
-  width: 60%;
+  width: 80%;
   left: 0;
   right: 0;
-  bottom: 2rem;
+  bottom: -2rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   position: absolute;
 }
 .contact ul li {
-  font-size: 4rem;
+  font-size: 8rem;
   margin-left: 1rem;
-  color: #e3c9b8;
+  /*! color: #e3c9b8; */
 }
 footer {
   margin-top: 2rem;
@@ -270,11 +273,11 @@ footer {
   background-blend-mode: lighten;
   background-color: #fff;
   background-color: white;
-  width: 80vw;
-  height: 80vh;
+  width: 50vw;
+  height: 50vh;
   bottom: 5%;
   right: 10%;
-  z-index: 3;
+  /*! z-index: 3; */
 }
 
 footer .footer-1 {
