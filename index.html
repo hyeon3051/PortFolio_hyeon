@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      />
+    </head>
+  </head>
+  <body>
+    <header class="heade" onmousemove="moveImage(event)">
+      <div class="introduce">
+        <p class="int-title">portfolio</p>
+        <p class="int-content">fullStack Devloper yoon hyeon-seob</p>
+      </div>
+      <div class="menu">
+        <ul class="menu-bar">
+          <li class="menu1">portfolio</li>
+          <li class="menu2">Home</li>
+          <li class="menu3">contact</li>
+          <li class="menu4">About</li>
+        </ul>
+      </div>
+    </header>
+    <article class="About">
+      <div class="title">About Me</div>
+      <div class="content">
+        <div class="content-box">
+          <div class="box"><p class="alphabet">A</p></div>
+          <div class="content-info">
+            <p class="content-title">HomePage</p>
+            <p class="content-content">
+              홈페이지 시안 작업을 포함하여 반응형웹, 모바일웹 등의 플랫폼에
+              최적화된 홈페이지 디자인 작업 및 개발까지 고객의 원하는 전략에
+              충실하세 수행하여 성공적인 디자이너가 되도록 최선을 다하고
+              있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="box"><p class="alphabet">A</p></div>
+          <div class="content-info">
+            <p class="content-title">frontend</p>
+
+            <p class="content-content">
+              React, Redux, vue.js 등 다양한 자바스크립트 프레임워크 활용 가능
+              및 bootstrap, animate.js, three.js 등 여러 라이브리러를 활용하여
+              애니메이션,3d, 웹 디자인 구현 가능
+            </p>
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="box"><p class="alphabet">A</p></div>
+          <div class="content-info">
+            <p class="content-title">Backend</p>
+            <p class="content-content">
+              php , node.js, c++ 같은 언어들로 백엔드 서버 구축 가능 및 유지
+              보수관리 C(Create) R(Read) U(update) D(Delete)시스템 구현 가능
+              mysql, firebase, mongodb 등 다양한 dbms 사용 가능
+            </p>
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="box"><p class="alphabet">A</p></div>
+          <div class="content-info">
+            <p class="content-title">Design</p>
+            <p class="content-content">
+              photoshop 및 ilustrator 를 활용한 기본적인 디자인 가능 premier
+              aftereffect를 활용하여 간단한 비디오 영상 편집 가능 및
+              웹디자인기능사,컴퓨터그래픽스운용기능사, 멀티미디어콘텐츠 제작
+              전문가 자격증 보유
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <main>
+      <div class="user">
+        <p class="user-title">portfolio</p>
+        <p class="user-content">developer hyeonSeob yoon</p>
+      </div>
+      <ul class="image-box">
+        <li class="sub-image1">
+          <img src="./Layer 2.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image2">
+          <img src="./Layer 3.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image3">
+          <img src="./Layer 4.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image4">
+          <img src="./Layer 5.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image5">
+          <img src="./Layer 6.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image6">
+          <img src="./Layer 7.png" alt="" class="sub" />
+        </li>
+        <li class="sub-image7">
+          <img src="./Layer 8.png" alt="" class="sub" />
+        </li>
+      </ul>
+    </main>
+    <div class="contact">
+      <img src="./Layer11.png" alt="" class="Layer_11" />
+      <div class="title">contact</div>
+      <div class="content">fullstack dEveloper hyeonSeob yoon</div>
+      <div class="contact-content">
+        안녕하세요 000입니다. <br />궁금한 사항을 메일로 문의해 주시면 <br />
+        빠른 시일내에 답변드리도록 하겠습니다. <br />감사합니다.
+      </div>
+      <ul>
+        <li>
+          <div class="menu-icon">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fab fa-twitter-square"></i></div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fab fa-instagram"></i></div>
+        </li>
+        <li>
+          <div class="menu-icon"><i class="fas fa-envelope"></i></div>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p class="footer-1">E-mail hyeon3051@gmail.com</p>
+      <p class="footer-2">
+        copyright ＠ 2020 by YOON HYEONSEOB. All rights Reserved
+      </p>
+    </footer>
+    <script>
+      function moveImage(event) {
+        const heade = document.querySelector(".heade");
+        var cx = event.clientX / 10 - 100;
+        var y = -event.clientY / 2;
+        console.log(cx, y);
+        heade.style.backgroundPosition = `${cx}px ${y}px`;
+      }
+    </script>
+  </body>
+</html>
